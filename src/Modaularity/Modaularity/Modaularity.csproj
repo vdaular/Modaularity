@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>Modaularity for .Net</Title>
+		<Description>Plugin Framework for .Net</Description>
+		<RepositoryUrl>https://github.com/vdaular/Modaularity</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>modules, plugins, plugandplay, dotnet, dotnet 7</PackageTags>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\..\..\RELEASE-NOTES">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="DotNetNuGetDownloader" Version="0.0.1-preview007" />
+		<PackageReference Include="DotNetTypeGenerator" Version="0.0.1-preview004" />
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.4.0-4.final" />
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="4.4.0-4.final" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Options" Version="7.0.0" />
+		<PackageReference Include="System.Reflection.MetadataLoadContext" Version="7.0.0" />
+	</ItemGroup>
+
+	<Target Name="PrepareReleaseNotes" BeforeTargets="GenerateNuspec">
+		<PropertyGroup>
+			<PackageDescription>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/../../../RELEASE-NOTES"))</PackageDescription>
+		</PropertyGroup>
+	</Target>
+</Project>

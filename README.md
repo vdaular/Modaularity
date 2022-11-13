@@ -1,1 +1,1 @@
-# TemplateProject
+# Modaularity
