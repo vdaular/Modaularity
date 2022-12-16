@@ -10,8 +10,4 @@
 		<OutputPath>..\bin\JsonNew</OutputPath>
 	</PropertyGroup>
 
-	<ItemGroup>
-	  <ProjectReference Include="..\..\..\tests\Assemblies\TestInterfaces\TestInterfaces.csproj" />
-	</ItemGroup>
-
 </Project>

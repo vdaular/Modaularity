@@ -10,8 +10,4 @@
     <PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\TestInterfaces\TestInterfaces.csproj" />
-  </ItemGroup>
-
 </Project>
