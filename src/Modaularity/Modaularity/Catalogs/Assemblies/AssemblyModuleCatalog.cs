@@ -19,7 +19,7 @@ public class AssemblyModuleCatalog : IModuleCatalog
         Dictionary<string, Predicate<Type>>? taggedFilters = null, Action<TypeFinderCriteriaBuilder>? configureFinder = null,
         TypeFinderCriteria? criteria = null, AssemblyModuleCatalogOptions? options = null)
     {
-        if (assembly == null)
+        if (assembly != null)
         {
             _assembly = assembly;
             _assemblyPath = _assembly.Location;
