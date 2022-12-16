@@ -10,4 +10,8 @@
 		<OutputPath>..\bin</OutputPath>
 	</PropertyGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\TestInterfaces\TestInterfaces.csproj" />
+	</ItemGroup>
+
 </Project>
