@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33027.239
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modaularity", "Modaularity\Modaularity.csproj", "{7B51727A-957C-4C64-8BE7-B35F6BFFC3AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modaularity", "Modaularity\Modaularity.csproj", "{7B51727A-957C-4C64-8BE7-B35F6BFFC3AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modaularity.Tests", "..\..\tests\unit\Modaularity.Tests\Modaularity.Tests.csproj", "{10BCA8DB-1CE9-4251-A294-F6ACA0406B14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonNetv2", "..\..\tests\assemblies\JsonNetv2\JsonNetv2.csproj", "{8191B60F-5C7D-4E88-9A18-B99F9BC06C3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestInterfaces", "..\..\tests\assemblies\TestInterfaces\TestInterfaces.csproj", "{9B39C121-065C-4324-AD50-FE0D41C6AE95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{7B51727A-957C-4C64-8BE7-B35F6BFFC3AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B51727A-957C-4C64-8BE7-B35F6BFFC3AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B51727A-957C-4C64-8BE7-B35F6BFFC3AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10BCA8DB-1CE9-4251-A294-F6ACA0406B14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10BCA8DB-1CE9-4251-A294-F6ACA0406B14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10BCA8DB-1CE9-4251-A294-F6ACA0406B14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10BCA8DB-1CE9-4251-A294-F6ACA0406B14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8191B60F-5C7D-4E88-9A18-B99F9BC06C3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8191B60F-5C7D-4E88-9A18-B99F9BC06C3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8191B60F-5C7D-4E88-9A18-B99F9BC06C3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8191B60F-5C7D-4E88-9A18-B99F9BC06C3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B39C121-065C-4324-AD50-FE0D41C6AE95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B39C121-065C-4324-AD50-FE0D41C6AE95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B39C121-065C-4324-AD50-FE0D41C6AE95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B39C121-065C-4324-AD50-FE0D41C6AE95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
