@@ -4,7 +4,7 @@ using Modaularity.Catalogs.Folders;
 
 namespace Modaularity.Configuration.Converters;
 
-public class FolderCatalogConfigurationConverter : IConfigurationCatalogConverter
+public class FolderCatalogConfigurationConverter : IConfigurationToCatalogConverter
 {
 
     public bool CanConvert(string type) 

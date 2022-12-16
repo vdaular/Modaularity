@@ -4,7 +4,7 @@ using Modaularity.Catalogs.Assemblies;
 
 namespace Modaularity.Configuration.Converters;
 
-public class AssemblyCatalogConfigurationConverter : IConfigurationCatalogConverter
+public class AssemblyCatalogConfigurationConverter : IConfigurationToCatalogConverter
 {
     public bool CanConvert(string type)
         => string.Equals(type, "Assembly", StringComparison.InvariantCultureIgnoreCase);

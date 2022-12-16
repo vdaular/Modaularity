@@ -26,11 +26,11 @@
 
 	<ItemGroup>
 		<PackageReference Include="DotNetNuGetDownloader" Version="0.0.1-preview007" />
-		<PackageReference Include="DotNetTypeGenerator" Version="0.0.1-preview004" />
-		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.4.0-4.final" />
-		<PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="4.4.0-4.final" />
+		<PackageReference Include="DotNetTypeGenerator" Version="0.0.2-preview004" />
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.4.0" />
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="4.4.0" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
-		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.1" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Options" Version="7.0.0" />
 		<PackageReference Include="System.Reflection.MetadataLoadContext" Version="7.0.0" />
