@@ -42,7 +42,7 @@ public class DelegateModuleCatalog : IModuleCatalog
     public DelegateModuleCatalog(MulticastDelegate multicastDelegate, string moduleName = "")
         : this(multicastDelegate, null, null, null, moduleName) { }
 
-    public DelegateModuleCatalog(TypeModuleCatalog catalog, MulticastDelegate multicastDelegate, DelegateModuleCatalogOptions options) 
+    public DelegateModuleCatalog(MulticastDelegate multicastDelegate, DelegateModuleCatalogOptions options) 
         : this(multicastDelegate, options?.ConversionRules, options?.NameOptions, options) { }
 
     public DelegateModuleCatalog(MulticastDelegate multicastDelegate) : this(multicastDelegate, moduleName: null) { }
