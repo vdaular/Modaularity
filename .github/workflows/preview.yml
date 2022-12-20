@@ -38,7 +38,7 @@ jobs:
     - name: PWD
       run: pwd
     - name: LS
-      run: ls -ltrh ..\..\..\..\..\Assemblies\output\net7.0\TestAssembly1.dll
+      run: ls -ltrh ..\..\..\
       working-directory: ./src/${{ env.PROJECT_NAME }}
     - name: Restore dependencies
       run: dotnet restore
