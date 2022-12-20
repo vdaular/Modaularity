@@ -7,33 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modaularity", "Modaularity\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modaularity.Tests", "..\..\tests\Unit\Modaularity.Tests\Modaularity.Tests.csproj", "{EEBCB350-445B-4DBA-AE83-1EAB7A7C4E2F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonNet1", "..\..\tests\Assemblies\JsonNet1\JsonNet1.csproj", "{8662FE97-3BD4-48E6-8A45-8DF3FCE8A4EE}"
-	ProjectSection(ProjectDependencies) = postProject
-		{799ADA38-0856-47DC-94C2-5CB7B5583D0A} = {799ADA38-0856-47DC-94C2-5CB7B5583D0A}
-	EndProjectSection
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonNet2", "..\..\tests\Assemblies\JsonNet2\JsonNet2.csproj", "{493AE0BA-5608-45AA-9E7D-02E89B7724E7}"
-	ProjectSection(ProjectDependencies) = postProject
-		{799ADA38-0856-47DC-94C2-5CB7B5583D0A} = {799ADA38-0856-47DC-94C2-5CB7B5583D0A}
-	EndProjectSection
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestAssembly1", "..\..\tests\Assemblies\TestAssembly1\TestAssembly1.csproj", "{A1623C3B-A249-4125-AF14-CCC16DB32015}"
-	ProjectSection(ProjectDependencies) = postProject
-		{799ADA38-0856-47DC-94C2-5CB7B5583D0A} = {799ADA38-0856-47DC-94C2-5CB7B5583D0A}
-	EndProjectSection
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestAssembly2", "..\..\tests\Assemblies\TestAssembly2\TestAssembly2.csproj", "{A97F86C3-5073-47E1-822F-655CB02177EF}"
-	ProjectSection(ProjectDependencies) = postProject
-		{799ADA38-0856-47DC-94C2-5CB7B5583D0A} = {799ADA38-0856-47DC-94C2-5CB7B5583D0A}
-	EndProjectSection
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestAssembly3", "..\..\tests\Assemblies\TestAssembly3\TestAssembly3.csproj", "{D845B2E3-A41D-41C8-B59D-E59EC1901670}"
-	ProjectSection(ProjectDependencies) = postProject
-		{799ADA38-0856-47DC-94C2-5CB7B5583D0A} = {799ADA38-0856-47DC-94C2-5CB7B5583D0A}
-	EndProjectSection
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestInterfaces", "..\..\tests\Assemblies\TestInterfaces\TestInterfaces.csproj", "{799ADA38-0856-47DC-94C2-5CB7B5583D0A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,30 +21,6 @@ Global
 		{EEBCB350-445B-4DBA-AE83-1EAB7A7C4E2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEBCB350-445B-4DBA-AE83-1EAB7A7C4E2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEBCB350-445B-4DBA-AE83-1EAB7A7C4E2F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8662FE97-3BD4-48E6-8A45-8DF3FCE8A4EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8662FE97-3BD4-48E6-8A45-8DF3FCE8A4EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8662FE97-3BD4-48E6-8A45-8DF3FCE8A4EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8662FE97-3BD4-48E6-8A45-8DF3FCE8A4EE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{493AE0BA-5608-45AA-9E7D-02E89B7724E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{493AE0BA-5608-45AA-9E7D-02E89B7724E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{493AE0BA-5608-45AA-9E7D-02E89B7724E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{493AE0BA-5608-45AA-9E7D-02E89B7724E7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A1623C3B-A249-4125-AF14-CCC16DB32015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A1623C3B-A249-4125-AF14-CCC16DB32015}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A1623C3B-A249-4125-AF14-CCC16DB32015}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A1623C3B-A249-4125-AF14-CCC16DB32015}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A97F86C3-5073-47E1-822F-655CB02177EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A97F86C3-5073-47E1-822F-655CB02177EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A97F86C3-5073-47E1-822F-655CB02177EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A97F86C3-5073-47E1-822F-655CB02177EF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D845B2E3-A41D-41C8-B59D-E59EC1901670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D845B2E3-A41D-41C8-B59D-E59EC1901670}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D845B2E3-A41D-41C8-B59D-E59EC1901670}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D845B2E3-A41D-41C8-B59D-E59EC1901670}.Release|Any CPU.Build.0 = Release|Any CPU
-		{799ADA38-0856-47DC-94C2-5CB7B5583D0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{799ADA38-0856-47DC-94C2-5CB7B5583D0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{799ADA38-0856-47DC-94C2-5CB7B5583D0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{799ADA38-0856-47DC-94C2-5CB7B5583D0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
