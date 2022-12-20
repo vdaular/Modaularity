@@ -11,6 +11,10 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <Reference Include="TestInterfaces">
 	    <HintPath>..\output\net7.0\TestInterfaces.dll</HintPath>
 	  </Reference>

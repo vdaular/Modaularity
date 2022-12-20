@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
-using System.Text.Json;
+using Newtonsoft.Json;
 using TestInterfaces;
 
 namespace JsonNet1;
@@ -8,7 +8,7 @@ public class JsonResolver1 : IJsonVersionResolver
 {
     public string GetVersion()
     {
-        var result = typeof(JsonSerializer).Assembly.GetName().Version.ToString();
+        var result = typeof(JsonConvert).Assembly.GetName().Version.ToString();
 
         return result;
     }

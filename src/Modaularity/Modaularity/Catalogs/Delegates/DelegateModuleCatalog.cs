@@ -45,6 +45,8 @@ public class DelegateModuleCatalog : IModuleCatalog
     public DelegateModuleCatalog(TypeModuleCatalog catalog, MulticastDelegate multicastDelegate, DelegateModuleCatalogOptions options) 
         : this(multicastDelegate, options?.ConversionRules, options?.NameOptions, options) { }
 
+    public DelegateModuleCatalog(MulticastDelegate multicastDelegate) : this(multicastDelegate, moduleName: null) { }
+
     public bool IsInitialized { get; set; }
 
     public Module Get(string name, Version version) => _catalog.Get(name, version);
