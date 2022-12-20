@@ -11,7 +11,9 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\TestInterfaces\TestInterfaces.csproj" />
+	  <Reference Include="TestInterfaces">
+	    <HintPath>..\output\net7.0\TestInterfaces.dll</HintPath>
+	  </Reference>
 	</ItemGroup>
 
 </Project>

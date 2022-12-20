@@ -8,14 +8,29 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modaularity.Tests", "..\..\tests\Unit\Modaularity.Tests\Modaularity.Tests.csproj", "{EEBCB350-445B-4DBA-AE83-1EAB7A7C4E2F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonNet1", "..\..\tests\Assemblies\JsonNet1\JsonNet1.csproj", "{8662FE97-3BD4-48E6-8A45-8DF3FCE8A4EE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{799ADA38-0856-47DC-94C2-5CB7B5583D0A} = {799ADA38-0856-47DC-94C2-5CB7B5583D0A}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonNet2", "..\..\tests\Assemblies\JsonNet2\JsonNet2.csproj", "{493AE0BA-5608-45AA-9E7D-02E89B7724E7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{799ADA38-0856-47DC-94C2-5CB7B5583D0A} = {799ADA38-0856-47DC-94C2-5CB7B5583D0A}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestAssembly1", "..\..\tests\Assemblies\TestAssembly1\TestAssembly1.csproj", "{A1623C3B-A249-4125-AF14-CCC16DB32015}"
+	ProjectSection(ProjectDependencies) = postProject
+		{799ADA38-0856-47DC-94C2-5CB7B5583D0A} = {799ADA38-0856-47DC-94C2-5CB7B5583D0A}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestAssembly2", "..\..\tests\Assemblies\TestAssembly2\TestAssembly2.csproj", "{A97F86C3-5073-47E1-822F-655CB02177EF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{799ADA38-0856-47DC-94C2-5CB7B5583D0A} = {799ADA38-0856-47DC-94C2-5CB7B5583D0A}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestAssembly3", "..\..\tests\Assemblies\TestAssembly3\TestAssembly3.csproj", "{D845B2E3-A41D-41C8-B59D-E59EC1901670}"
+	ProjectSection(ProjectDependencies) = postProject
+		{799ADA38-0856-47DC-94C2-5CB7B5583D0A} = {799ADA38-0856-47DC-94C2-5CB7B5583D0A}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestInterfaces", "..\..\tests\Assemblies\TestInterfaces\TestInterfaces.csproj", "{799ADA38-0856-47DC-94C2-5CB7B5583D0A}"
 EndProject
