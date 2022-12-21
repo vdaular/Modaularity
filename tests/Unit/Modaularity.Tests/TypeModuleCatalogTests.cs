@@ -4,6 +4,7 @@ using Modaularity.Tests.Modules;
 
 namespace Modaularity.Tests;
 
+[Collection("Sequential")]
 public class TypeModuleCatalogTests
 {
     [Fact]
@@ -18,18 +19,29 @@ public class TypeModuleCatalogTests
         Assert.Single(modules);
     }
 
-    // Prueba fallando en GitHub Actions
-    //[Fact]
-    //public async Task NameIsTypeFullName()
-    //{
-    //    var catalog = new TypeModuleCatalog(typeof(TypeModule));
+    [Fact]
+    public async Task ACanSetNameByAttribute()
+    {
+        var catalog = new TypeModuleCatalog(typeof(TypeModuleWithName));
 
-    //    await catalog.Initialize();
+        await catalog.Initialize();
 
-    //    var module = catalog.Single();
+        var theModule = catalog.Single();
 
-    //    Assert.Equal("Modaularity.Tests.Modules.TypeModule", module.Name);
-    //}
+        Assert.Equal("MyCustomName", theModule.Name);
+    }
+
+    [Fact]
+    public async Task ANameIsTypeFullName()
+    {
+        var catalog = new TypeModuleCatalog(typeof(TypeModule));
+
+        await catalog.Initialize();
+
+        var theModule = catalog.Single();
+
+        Assert.Equal("Modaularity.Tests.Modules.TypeModule", theModule.Name);
+    }
 
     [Fact]
     public async Task CanConfigureNameResolver()
@@ -41,23 +53,10 @@ public class TypeModuleCatalogTests
 
         await catalog.Initialize();
 
-        var module = catalog.Single();
+        var theModule = catalog.Single();
 
-        Assert.Equal("HelloOptions", module.Name);
+        Assert.Equal("HelloOptions", theModule.Name);
     }
-
-    // Prueba fallando en GitHub Actions
-    //[Fact]
-    //public async Task CanSetNameByAttribute()
-    //{
-    //    var catalog = new TypeModuleCatalog(typeof(TypeModuleWithName));
-
-    //    await catalog.Initialize();
-
-    //    var module = catalog.Single();
-
-    //    Assert.Equal("MyCustomName", module.Name);
-    //}
 
     [Fact]
     public async Task CanConfigureNamingOptions()
@@ -74,9 +73,9 @@ public class TypeModuleCatalogTests
 
         await catalog.Initialize();
 
-        var module = catalog.Single();
+        var theModule = catalog.Single();
 
-        Assert.Equal("HelloOptions", module.Name);
+        Assert.Equal("HelloOptions", theModule.Name);
     }
 
     [Fact]
@@ -91,9 +90,9 @@ public class TypeModuleCatalogTests
 
         await catalog.Initialize();
 
-        var module = catalog.Single();
+        var theModule = catalog.Single();
 
-        Assert.Equal("HelloOptions", module.Name);
+        Assert.Equal("HelloOptions", theModule.Name);
     }
 
     [Fact]
@@ -118,9 +117,9 @@ public class TypeModuleCatalogTests
         await catalog.Initialize();
         await catalog2.Initialize();
 
-        var module = catalog.Single();
+        var theModule = catalog.Single();
 
-        Assert.Equal("HelloOptions", module.Name);
+        Assert.Equal("HelloOptions", theModule.Name);
 
         var anotherModule = catalog2.Single();
 
