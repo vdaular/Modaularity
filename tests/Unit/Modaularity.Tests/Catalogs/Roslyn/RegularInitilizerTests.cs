@@ -55,4 +55,58 @@ public class RegularInitilizerTests
 
         await TestHelpers.CompileRegular(code);
     }
+
+    [Fact]
+    public async Task CanAddReference()
+    {
+        var code =
+            """
+                public class MyClass
+                {
+                    public void RunThings()
+                    {
+                        Newtonsoft.Json.JsonConvert.SerializeObject(15);
+                    }
+                }
+            """;
+
+        var options = new RoslynModuleCatalogOptions()
+        {
+            AdditionalReferences = new()
+            {
+                typeof(Newtonsoft.Json.JsonConvert).Assembly
+            }
+        };
+
+        await TestHelpers.CompileRegular(code, options);
+    }
+
+    [Fact]
+    public async Task CanAddNamespace()
+    {
+        var code =
+            """
+                public class MyClass
+                {
+                    public void RunThings()
+                    {
+                        JsonConvert.SerializeObject(15);
+                    }
+                }
+            """;
+
+        var options = new RoslynModuleCatalogOptions()
+        {
+            AdditionalReferences = new()
+            {
+                typeof(Newtonsoft.Json.JsonConvert).Assembly
+            },
+            AdditionalNamespaces = new()
+            {
+                "Newtonsoft.Json"
+            }
+        };
+
+        await TestHelpers.CompileRegular(code, options);
+    }
 }
