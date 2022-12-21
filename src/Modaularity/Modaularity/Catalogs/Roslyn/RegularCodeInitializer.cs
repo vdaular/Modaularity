@@ -35,7 +35,7 @@ public class RegularCodeInitializer
             code.AppendLine("using System.Threading.Tasks;");
             code.AppendLine("using System.Text;");
             code.AppendLine("using System.Collections;");
-            code.AppendLine("using System.Collections.Generic");
+            code.AppendLine("using System.Collections.Generic;");
 
             if (_options.AdditionalNamespaces?.Any() == true)
                 foreach (var ns in _options.AdditionalNamespaces)
