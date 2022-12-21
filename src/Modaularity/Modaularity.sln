@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modaularity", "Modaularity\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modaularity.Tests", "..\..\tests\Unit\Modaularity.Tests\Modaularity.Tests.csproj", "{EEBCB350-445B-4DBA-AE83-1EAB7A7C4E2F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonNet2", "..\..\tests\Assemblies\JsonNet2\JsonNet2.csproj", "{321A840B-A292-4286-9998-6C02114B3019}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{EEBCB350-445B-4DBA-AE83-1EAB7A7C4E2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEBCB350-445B-4DBA-AE83-1EAB7A7C4E2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEBCB350-445B-4DBA-AE83-1EAB7A7C4E2F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{321A840B-A292-4286-9998-6C02114B3019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{321A840B-A292-4286-9998-6C02114B3019}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{321A840B-A292-4286-9998-6C02114B3019}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{321A840B-A292-4286-9998-6C02114B3019}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
