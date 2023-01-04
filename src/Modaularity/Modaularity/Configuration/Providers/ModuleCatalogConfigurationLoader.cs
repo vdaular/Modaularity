@@ -6,11 +6,11 @@ namespace Modaularity.Configuration.Providers;
 
 public class ModuleCatalogConfigurationLoader : IModuleCatalogConfigurationLoader
 {
-    private ModuleFrameworkOptions _options;
+    private ModaularityOptions _options;
 
     public virtual string CatalogsKey => "Catalogs";
 
-    public ModuleCatalogConfigurationLoader(IOptions<ModuleFrameworkOptions> options)
+    public ModuleCatalogConfigurationLoader(IOptions<ModaularityOptions> options)
     {
         _options = options.Value;
     }
