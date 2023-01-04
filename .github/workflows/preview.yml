@@ -44,13 +44,13 @@ jobs:
       run: dotnet restore
       working-directory: ./src/${{ env.PROJECT_NAME }}
     - name: Build
-      run: dotnet build --no-restore --configuration Release /p:Version=${VERSION}
+      run: dotnet build ${{ env.PROJECT_NAME }}.csproj --no-restore --configuration Release /p:Version=${VERSION}
       working-directory: ./src/${{ env.PROJECT_NAME }}
     - name: Test
       run: dotnet test --configuration Release /p:Version=${VERSION} --no-build
       working-directory: ./src/${{ env.PROJECT_NAME }}
     - name: Pack
-      run: dotnet pack --no-restore --no-build --configuration Release /p:Version=${VERSION} --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }}
+      run: dotnet pack ${{ env.PROJECT_NAME }}.csproj --no-restore --no-build --configuration Release /p:Version=${VERSION} --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }}
       working-directory: ./src/${{ env.PROJECT_NAME }}
     - name: Push to GitHub
       run: dotnet nuget push ${{ env.PACKAGE_OUTPUT_DIRECTORY }}/*.nupkg --source ${{ env.GITHUB_SOURCE_URL }} --api-key ${GITHUB_TOKEN} --skip-duplicate
